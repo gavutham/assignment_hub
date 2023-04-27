@@ -122,8 +122,9 @@ def count_loc(filename):
         class_loc = calc_classes_loc(filtered_lines)
         return len(filtered_lines), independent_function_loc, class_loc[:2], class_loc[-1]
 
-
-target_path = "C:\\Users\\kgavu\\Downloads\\xml\\xml"
+#replace the below string with your path to the package folder
+#and don't forget to add two '\\' like given
+target_path = "C:\\Users\\kgavu\\Downloads\\xml\\xml" 
 
 total_loc = 0
 directories = list((os.walk(target_path)))
